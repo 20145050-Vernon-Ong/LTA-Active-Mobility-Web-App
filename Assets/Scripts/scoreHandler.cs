@@ -40,7 +40,7 @@ public class scoreHandler : MonoBehaviour
     public int howmanypoints = 0; 
 
     private readonly HealthManager hm;
-    private int highscore;
+    //private int highscore;
     
     // Start is called before the first frame update
     void Awake()
@@ -51,7 +51,6 @@ public class scoreHandler : MonoBehaviour
         learningPoint3Text = learningPoint3.GetComponent<TextMeshProUGUI>();
         distanceText = distance.GetComponent<TextMeshProUGUI>();
         currentScoreText = currentScore.GetComponent<TextMeshProUGUI>();
-
         checboxscore = checboxscore.GetComponent<TextMeshProUGUI>();
         checboxscore1 = checboxscore1.GetComponent<TextMeshProUGUI>();
         checboxscore2 = checboxscore2.GetComponent<TextMeshProUGUI>();
@@ -175,7 +174,7 @@ public class scoreHandler : MonoBehaviour
 
     public IEnumerator LoadGame()
     {
-        operation = SceneManager.LoadSceneAsync("newscene");
+        operation = SceneManager.LoadSceneAsync(1);
         while (!operation.isDone)
         {
             yield return null;

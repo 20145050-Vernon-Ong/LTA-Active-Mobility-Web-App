@@ -136,13 +136,13 @@ public class Readxml : MonoBehaviour
             }
         }
     }
-
+    
     void Awake()
     {
         pop = GetComponent<PopupManager>();
         animator = GetComponent<Animator>();
         gc = GetComponent<GC>();
-        StartCoroutine(ReadXML("https://raw.githubusercontent.com/holotester/LTA-Active-Mobility-Act/master/Xml/popupNotifi.xml"));
+        StartCoroutine(ReadXML("https://raw.githubusercontent.com/holotester/LtaAmgame/main/Xml/popupNotifi.xml?token=GHSAT0AAAAAACJZW667C27CNQVB3A7GI7KCZKN4WOQ"));
     }
     
 

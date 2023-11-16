@@ -40,7 +40,6 @@ public class Leaderboard : MonoBehaviour
             PlayerPrefs.SetString("playerName", playerName);
 
         }
-
         GetLeaderboard();
     }
 
@@ -61,7 +60,7 @@ public class Leaderboard : MonoBehaviour
     public void GetLeaderboard()
     {
         LeaderboardCreator.GetLeaderboard(publicLeaderboardKey, ((msg) =>
-        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
             int loopLength = (msg.Length);
             string playerID = PlayerPrefs.GetString("playerID");
             for (int i = 0; i < loopLength; ++i)

@@ -4,8 +4,9 @@ public class PopupManager : MonoBehaviour
 {
     private Readxml xl;
     public bool isChecked;
+   // public bool isDemo;
     public static int activatePopups = 1; // This flag controls whether popups are disabled or not
-
+    //public static int demo = 1;
     void Awake()
     {
         xl = GetComponent<Readxml>();
@@ -27,6 +28,14 @@ public class PopupManager : MonoBehaviour
             xl.tutorialPage.SetActive(true);
             isChecked= false;
         }
+
+        /*if (demo == 1)
+        {
+            isDemo = true;
+        } else
+        {
+            isDemo = false;
+        }*/
         // Optionally, you can add an 'else' block here if you want to enable popups.
     }
 }

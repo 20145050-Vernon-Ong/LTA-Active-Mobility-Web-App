@@ -4,12 +4,13 @@ using UnityEngine.UI;
 public class ButtonScript : MonoBehaviour
 {
     private Toggle toggle;
+    //private Toggle demo;
     private string toggleKey = "ToggleState"; // Key for PlayerPrefs
-
+    //private string demoKey = "ToggleState";
     private void Start()
     {
         toggle = GetComponent<Toggle>();
-
+        //demo = GetComponent<Toggle>();
         // Load the toggle state from PlayerPrefs and set it on the toggle
         if (PlayerPrefs.HasKey(toggleKey))
         {
@@ -32,5 +33,14 @@ public class ButtonScript : MonoBehaviour
         // Log the toggle state
         Debug.Log("Toggle State: " + toggle.isOn);
     }
+
+    /*public void DemoToggle()
+    {
+        int demoState = demo.isOn ? 1 : 0;
+        PlayerPrefs.SetInt(demoKey, demoState);
+        Debug.Log(demoState);
+        PopupManager.activatePopups = demoState;
+        Debug.Log("Demo State: " + demo.isOn);
+    }*/
 }
 
