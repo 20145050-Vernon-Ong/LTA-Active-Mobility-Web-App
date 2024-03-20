@@ -1,2 +1,2 @@
-https://harpobj-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/efc200d7-b461-4cdb-9e8f-026f0c0c2e0e/detect/iterations/Iteration5/image
+https://harpobj-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/efc200d7-b461-4cdb-9e8f-026f0c0c2e0e/detect/iterations/Iteration14/image
 
